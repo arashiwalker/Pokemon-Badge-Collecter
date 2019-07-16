@@ -25,11 +25,16 @@ function playAudio2() {
     pika.play()
 }
 
+function playAudio3() {
+    var lose = new Audio('../unit-4-game/assets/sounds/lose.mp3')
+    lose.play()
+}
+
 function beginGame(){
     winningNum() 
     BadgeValue()
     neededBadges = winningNum()
-    $("#neededBadges").text("Badges Needed: " + neededBadges)
+    $("#neededBadges").text("Badges needed: " + neededBadges)
     $("#Wins").text("Wins: " + Wins)
     $("#Losses").text("Losses: " + Losses)
     totalBadges()
@@ -81,7 +86,6 @@ function resetGame(){
     collectedBadges = 0 
     neededBadges = 0
 }
-
 
 $("#boulderB").on("click",function(){
     collectedBadges = collectedBadges + boulderB
