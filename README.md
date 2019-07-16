@@ -47,7 +47,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 ### Option One: CrystalsCollector Game (Recommended)
 
-![Crystal Collector](Images/1-CrystalCollector.jpg)
+![Crystal Collector](../unit-4-game/assets/images/pikachu.gif)
 
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
