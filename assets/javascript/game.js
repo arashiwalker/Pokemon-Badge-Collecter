@@ -15,11 +15,21 @@ var volcanoB
 var earthB
 var pikachu
 
+function playAudio() {
+    var audio = new Audio('../unit-4-game/assets/sounds/badgeSound.mp3')
+    audio.play()
+}
+
+function playAudio2() {
+    var pika = new Audio('../unit-4-game/assets/sounds/Pikaaaa.mp3')
+    pika.play()
+}
+
 function beginGame(){
     winningNum() 
     BadgeValue()
     neededBadges = winningNum()
-    $("#neededBadges").text("Badges Needed is: " + neededBadges)
+    $("#neededBadges").text("Badges Needed: " + neededBadges)
     $("#Wins").text("Wins: " + Wins)
     $("#Losses").text("Losses: " + Losses)
     totalBadges()
@@ -35,16 +45,6 @@ function BadgeNum(){
     return(randomNum) 
 }   
 
-function playAudio() {
-    var audio = new Audio('../unit-4-game/assets/sounds/badgeSound.mp3')
-    audio.play()
-}
-
-function playAudio2() {
-    var pika = new Audio('../unit-4-game/assets/sounds/Pikaaaa.mp3')
-    pika.play()
-}
-
 function BadgeValue(){
     boulderB = BadgeNum()
     cascadeB = BadgeNum()
@@ -57,7 +57,7 @@ function BadgeValue(){
 }
 
 function totalBadges(){
-    $("#collectedBadges").text("Badges collected is: " + collectedBadges)
+    $("#collectedBadges").text("Badges collected: " + collectedBadges)
 }
 
 function checkingScore(){
