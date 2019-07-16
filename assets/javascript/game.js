@@ -36,8 +36,13 @@ function BadgeNum(){
 }   
 
 function playAudio() {
-    var audio = new Audio('badgeSound.mp3')
+    var audio = new Audio('../unit-4-game/assets/sounds/badgeSound.mp3')
     audio.play()
+}
+
+function playAudio2() {
+    var pika = new Audio('../unit-4-game/assets/sounds/Pikaaaa.mp3')
+    pika.play()
 }
 
 function BadgeValue(){
@@ -57,16 +62,16 @@ function totalBadges(){
 
 function checkingScore(){
     if (collectedBadges == neededBadges) {
-        console.log("you win")
         Wins = Wins + 1
         $("#Wins").text("Wins: " + Wins)
+        playAudio()
         resetGame()
         beginGame()
     }
     if (collectedBadges > neededBadges){
-        console.log("you lose")
         Losses = Losses + 1
         $("#Losses").text("Losses: " + Losses)
+        playAudio3()
         resetGame()
         beginGame()
     }
@@ -82,7 +87,6 @@ $("#boulderB").on("click",function(){
     collectedBadges = collectedBadges + boulderB
     totalBadges()
     checkingScore()
-    playAudio()
 })
 
 $("#cascadeB").on("click",function(){
@@ -130,6 +134,7 @@ $("#earthB").on("click",function(){
 $("#pikachu").on("click",function(){
     collectedBadges = 0
     totalBadges()
+    playAudio2()
 })
 
 beginGame()
