@@ -1,0 +1,37 @@
+body {
+	background-image: url(../images/background.jpg);
+	font-size: 10px;
+  	font-smooth: never;
+  	-webkit-font-smoothing: none;
+  	font-family: 'pokemon-font', monospace;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+}
+
+img {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.sidenav {
+  float: left;
+  width: 100%;
+  width: 400px;
+  padding: 20px;
+  margin: 10 20 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.hello {
+	background-color: #bfaaac;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
