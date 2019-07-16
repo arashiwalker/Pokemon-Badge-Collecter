@@ -30,7 +30,7 @@ function playAudio3() {
     lose.play()
 }
 
-function beginGame(){
+function startGame(){
     winningNum() 
     BadgeValue()
     neededBadges = winningNum()
@@ -65,20 +65,20 @@ function totalBadges(){
     $("#collectedBadges").text("Badges collected: " + collectedBadges)
 }
 
-function checkingScore(){
+function winCondition(){
     if (collectedBadges == neededBadges) {
         Wins = Wins + 1
         $("#Wins").text("Wins: " + Wins)
         playAudio()
         resetGame()
-        beginGame()
+        startGame()
     }
     if (collectedBadges > neededBadges){
         Losses = Losses + 1
         $("#Losses").text("Losses: " + Losses)
         playAudio3()
         resetGame()
-        beginGame()
+        startGame()
     }
 }
 
@@ -90,49 +90,49 @@ function resetGame(){
 $("#boulderB").on("click",function(){
     collectedBadges = collectedBadges + boulderB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#cascadeB").on("click",function(){
     collectedBadges = collectedBadges + cascadeB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#thunderB").on("click",function(){
     collectedBadges = collectedBadges + thunderB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#rainbowB").on("click",function(){
     collectedBadges = collectedBadges + rainbowB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#soulB").on("click",function(){
     collectedBadges = collectedBadges + soulB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#marshB").on("click",function(){
     collectedBadges = collectedBadges + marshB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#volcanoB").on("click",function(){
     collectedBadges = collectedBadges + volcanoB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#earthB").on("click",function(){
     collectedBadges = collectedBadges + earthB
     totalBadges()
-    checkingScore()
+    winCondition()
 })
 
 $("#pikachu").on("click",function(){
@@ -141,5 +141,5 @@ $("#pikachu").on("click",function(){
     playAudio2()
 })
 
-beginGame()
+startGame()
 
