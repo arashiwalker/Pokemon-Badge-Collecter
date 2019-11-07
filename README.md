@@ -47,8 +47,6 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 ### Option One: CrystalsCollector Game (Recommended)
 
-![Crystal Collector](unit-4-game/assets/images/pikachu.gif)
-
 1. [Watch the demo](https://youtu.be/yNI0l2FMeCk).
 
 2. The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters. 
